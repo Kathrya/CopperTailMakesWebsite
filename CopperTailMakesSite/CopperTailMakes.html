@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CopperTail Makes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --fox-orange: #de943b;
+      --fox-copper: #b87234;
+      --fox-dark: #393a38;
+      --fox-light: #f5f5f5;
+    }
+  </style>
+</head>
+<body class="bg-[var(--fox-light)] text-[var(--fox-dark)] font-sans">
+
+  <!-- Header -->
+  <header class="bg-[var(--fox-dark)] text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="CopperTail Makes Logo" class="h-10 w-10 object-contain">
+        <h1 class="text-2xl font-bold text-[var(--fox-orange)]">CopperTail Makes</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-[var(--fox-orange)]">About</a>
+        <a href="#products" class="hover:text-[var(--fox-orange)]">Products</a>
+        <a href="#contact" class="hover:text-[var(--fox-orange)]">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-b from-[var(--fox-orange)]/20 to-[var(--fox-light)]">
+    <h2 class="text-4xl font-bold text-[var(--fox-dark)]">Handmade 3D Prints with a Fox’s Touch</h2>
+    <p class="mt-4 text-lg text-[var(--fox-dark)] max-w-xl mx-auto">
+      Jewelry, trinkets, and decor inspired by foxes, warmth, and steampunk charm.
+    </p>
+    <a href="#products" class="mt-6 inline-block bg-[var(--fox-orange)] text-white px-6 py-3 rounded-xl shadow-md hover:bg-[var(--fox-copper)] transition">
+      Browse Products
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-16 px-4">
+    <h3 class="text-3xl font-semibold text-[var(--fox-orange)] mb-6">About CopperTail Makes</h3>
+    <p class="text-[var(--fox-dark)] leading-relaxed">
+      CopperTail Makes is a creative shop offering small 3D printed designs, 
+      crafted with care and inspired by the playful spirit of a fox. 
+      From copper-toned pendants to low-poly fox figures and unique desk accessories, 
+      every piece is made in-house with attention to detail. 
+      Items are printed in PLA filament and finished by hand, ready to ship or made to order.
+    </p>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="bg-[var(--fox-orange)] py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-semibold text-white mb-10">Products</h3>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Example Product Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="images/pendant.jpg" alt="Fox Pendant" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-[var(--fox-copper)]">Fox Pendant</h4>
+            <p class="text-[var(--fox-dark)] mt-2">A copper-toned 3D printed pendant inspired by a fox’s spirit.</p>
+            <a href="https://www.etsy.com/your-link-here" target="_blank"
+               class="mt-4 inline-block bg-[var(--fox-dark)] text-white px-4 py-2 rounded-lg hover:bg-black transition">
+              Buy on Etsy
+            </a>
+          </div>
+        </div>
+
+        <!-- Another Product -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="images/fox-figure.jpg" alt="Low-Poly Fox Figure" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-[var(--fox-copper)]">Low-Poly Fox Figure</h4>
+            <p class="text-[var(--fox-dark)] mt-2">A minimalist fox model, perfect for your desk or shelf.</p>
+            <a href="https://www.etsy.com/your-link-here" target="_blank"
+               class="mt-4 inline-block bg-[var(--fox-dark)] text-white px-4 py-2 rounded-lg hover:bg-black transition">
+              Buy on Etsy
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto py-16 px-4">
+    <h3 class="text-3xl font-semibold text-[var(--fox-orange)] mb-6">Contact</h3>
+    <p class="text-[var(--fox-dark)]">Find us on Etsy or reach out directly for questions or custom requests.</p>
+    <div class="mt-6 space-x-4">
+      <a href="https://www.etsy.com/shop/CopperTailMakes" target="_blank"
+         class="bg-[var(--fox-orange)] text-white px-5 py-2 rounded-lg hover:bg-[var(--fox-copper)] transition">Etsy Shop</a>
+      <a href="mailto:your-email@example.com"
+         class="bg-[var(--fox-dark)] text-white px-5 py-2 rounded-lg hover:bg-black transition">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--fox-orange)] text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; <span id="year"></span> CopperTail Makes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
